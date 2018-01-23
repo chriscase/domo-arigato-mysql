@@ -1,6 +1,6 @@
 {
-  "name": "q-nodemysql",
-  "version": "1.0.0",
+  "name": "@chriscase/q-nodemysql",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
