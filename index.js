@@ -15,7 +15,15 @@ var Database = function (config) {
       } );
     });
   }
-
+  this.startTransaction = function () {
+      return this.query('start transaction');
+  }
+  this.commit = function () {
+      return this.query('commit');
+  }
+  this.rollback = function () {
+      return this.query('rollback');
+  }
   this.close = function() {
     return new Promise( ( resolve, reject ) => {
       this.connection.end( err => {
