@@ -1,5 +1,5 @@
 {
-  "name": "@chriscase/q-nodemysql",
+  "name": "domo-arigato-mysql",
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chriscase/q-nodemysql.git"
+    "url": "git+https://github.com/chriscase/domo-arigato-mysql.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chriscase/q-nodemysql/issues"
+    "url": "https://github.com/chriscase/domo-arigato-mysql/issues"
   },
-  "homepage": "https://github.com/chriscase/q-nodemysql#readme"
+  "homepage": "https://github.com/chriscase/domo-arigato-mysql#readme"
 }
