@@ -13,9 +13,18 @@ var database = require('domo-arigato-mysql')({
 
 var query = `select 'test' from dual`;
 
-database.query(query, params)
+database.startTransaction()
+  .then(function() {
+    return database.query(query, params);
+  })
   .then(function (rows) {
     console.dir(rows);
-    database.close();
+    return database.commit();
+  })
+  .then(function() {
+  	  return database.close();
+  })
+  .catch(function(err) {
+    return database.rollback();
   });
 ```
